@@ -9,7 +9,7 @@ export const linkReference = {
   tree: "https://github.com/Aleff13/estruturas/tree/master/Tree",
   recursion: "https://github.com/Aleff13/estruturas/tree/master/Algorithms",
   hashSearch:
-    "https://github.com/Aleff13/estruturas/blob/master/Hash/HashTable.ts#L77",
+    "https://github.com/Aleff13/estruturas/blob/master/Hash/HashTable.ts#L61-L84",
 };
 
 export const resumeText = {
