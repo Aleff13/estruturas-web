@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/estruturas-web/static/css/main.a3c92fea.css",
-    "main.js": "/estruturas-web/static/js/main.32ef8c12.js",
+    "main.js": "/estruturas-web/static/js/main.5ee5f55c.js",
     "static/js/787.f76a319d.chunk.js": "/estruturas-web/static/js/787.f76a319d.chunk.js",
     "static/media/Deque.md": "/estruturas-web/static/media/Deque.8ecbb8b02b957e26caf5.md",
     "static/media/Tree.md": "/estruturas-web/static/media/Tree.5840127022b16d6c8aa5.md",
     "static/media/Queue.md": "/estruturas-web/static/media/Queue.d96a20764c85951b540b.md",
+    "static/media/recursion.md": "/estruturas-web/static/media/recursion.0df04347f18cbff31c94.md",
     "static/media/Stack.md": "/estruturas-web/static/media/Stack.929b8d79f67bfffc75d5.md",
     "static/media/array.md": "/estruturas-web/static/media/array.5e6e555ecb2783702658.md",
     "static/media/Hashs.md": "/estruturas-web/static/media/Hashs.7d531c73756cc17d7b02.md",
@@ -13,11 +14,11 @@
     "static/media/dictionary.md": "/estruturas-web/static/media/dictionary.059cbc2f8f9f26116d3e.md",
     "static/media/Set.md": "/estruturas-web/static/media/Set.7fa0c012a2984ab56ee8.md",
     "main.a3c92fea.css.map": "/estruturas-web/static/css/main.a3c92fea.css.map",
-    "main.32ef8c12.js.map": "/estruturas-web/static/js/main.32ef8c12.js.map",
+    "main.5ee5f55c.js.map": "/estruturas-web/static/js/main.5ee5f55c.js.map",
     "787.f76a319d.chunk.js.map": "/estruturas-web/static/js/787.f76a319d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3c92fea.css",
-    "static/js/main.32ef8c12.js"
+    "static/js/main.5ee5f55c.js"
   ]
 }
