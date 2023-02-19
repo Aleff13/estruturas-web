@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/estruturas-web/static/css/main.b691d25f.css",
-    "main.js": "/estruturas-web/static/js/main.b99335f0.js",
+    "main.css": "/estruturas-web/static/css/main.a3c92fea.css",
+    "main.js": "/estruturas-web/static/js/main.32ef8c12.js",
     "static/js/787.f76a319d.chunk.js": "/estruturas-web/static/js/787.f76a319d.chunk.js",
     "static/media/Deque.md": "/estruturas-web/static/media/Deque.8ecbb8b02b957e26caf5.md",
     "static/media/Tree.md": "/estruturas-web/static/media/Tree.5840127022b16d6c8aa5.md",
@@ -12,12 +12,12 @@
     "index.html": "/estruturas-web/index.html",
     "static/media/dictionary.md": "/estruturas-web/static/media/dictionary.059cbc2f8f9f26116d3e.md",
     "static/media/Set.md": "/estruturas-web/static/media/Set.7fa0c012a2984ab56ee8.md",
-    "main.b691d25f.css.map": "/estruturas-web/static/css/main.b691d25f.css.map",
-    "main.b99335f0.js.map": "/estruturas-web/static/js/main.b99335f0.js.map",
+    "main.a3c92fea.css.map": "/estruturas-web/static/css/main.a3c92fea.css.map",
+    "main.32ef8c12.js.map": "/estruturas-web/static/js/main.32ef8c12.js.map",
     "787.f76a319d.chunk.js.map": "/estruturas-web/static/js/787.f76a319d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b691d25f.css",
-    "static/js/main.b99335f0.js"
+    "static/css/main.a3c92fea.css",
+    "static/js/main.32ef8c12.js"
   ]
 }
