@@ -9,7 +9,7 @@ import queue from "../src/markdown/Queue.md";
 import set from "../src/markdown/Set.md";
 
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 interface MardownProps {
   content: MarkdownIndex;
@@ -63,9 +63,11 @@ const Markdown = ({ content }: MardownProps) => {
   });
 
   return (
-    <Container sx={{overflowWrap: 'break-word'}}>
-      <ReactMarkdown>{docs}</ReactMarkdown>
-    </Container >
+    <Container sx={{ overflowWrap: "break-word" }}>
+      <Typography>
+        <ReactMarkdown>{docs}</ReactMarkdown>
+      </Typography>
+    </Container>
   );
 };
 

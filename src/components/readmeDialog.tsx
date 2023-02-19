@@ -1,18 +1,12 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import Avatar from "@mui/material/Avatar";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import Typography from "@mui/material/Typography";
-import { blue } from "@mui/material/colors";
-import { marked } from "marked";
 import Markdown, { MarkdownIndex } from "../markdown";
-import { Card, CardActions, CardContent, Link } from "@mui/material";
+import { Card, CardActions, CardContent, IconButton, Link, Paper } from "@mui/material";
+import CodeIcon from '@mui/icons-material/Code';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 const emails = ["username@gmail.com", "user02@gmail.com"];
 
@@ -38,13 +32,13 @@ const ReadmeDialog = (props: SimpleDialogProps) => {
     </Dialog>
   );
 }
-interface ReadmeSimpleDialogProps {
+interface StructureCardProps {
     title: string
     content: MarkdownIndex
     resume: string
     reference: string
 }
-const ReadmeSimpleDialog = ({title, content, resume, reference}: ReadmeSimpleDialogProps) => {
+const StructureCard = ({title, content, resume, reference}: StructureCardProps) => {
   const [open, setOpen] = React.useState(false);
   const [selectedValue, setSelectedValue] = React.useState(emails[1]);
 
@@ -58,7 +52,7 @@ const ReadmeSimpleDialog = ({title, content, resume, reference}: ReadmeSimpleDia
   };
 
   return (
-    <Card sx={{ minWidth: 275, margin: 5 }}>
+    <Card sx={{ minWidth: 200, margin: 5 }} elevation={4}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             {title.toUpperCase()}
@@ -67,11 +61,13 @@ const ReadmeSimpleDialog = ({title, content, resume, reference}: ReadmeSimpleDia
         {resume}
       </Typography>
       </CardContent>
-      <CardActions>
-      <Button onClick={handleClickOpen}>
-        {title}
-      </Button>
-      <Link href={reference} color="inherit">Exemplo</Link>
+      <CardActions sx={{gap: 2, pt: 2}}>
+      <IconButton onClick={handleClickOpen}>
+        <MenuBookIcon/>
+      </IconButton>
+      <IconButton href={reference}>
+        <CodeIcon />
+      </IconButton>
       <ReadmeDialog
         selectedValue={selectedValue}
         open={open}
@@ -84,4 +80,4 @@ const ReadmeSimpleDialog = ({title, content, resume, reference}: ReadmeSimpleDia
   );
 }
 
-export {ReadmeDialog, ReadmeSimpleDialog}
+export {ReadmeDialog, StructureCard}
