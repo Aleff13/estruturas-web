@@ -97,10 +97,16 @@ const App = () => {
         }}
       >
         <StructureCard
-          resume={resumeText.algorithms}
+          resume={resumeText.recursion}
           title={MarkdownIndex.recursion}
           content={MarkdownIndex.recursion}
-          reference={linkReference.algorithms}
+          reference={linkReference.recursion}
+        ></StructureCard>
+        <StructureCard
+          resume={resumeText.hashSearch}
+          title={MarkdownIndex.hashSearch}
+          content={MarkdownIndex.hashSearch}
+          reference={linkReference.hashSearch}
         ></StructureCard>
       </Box>
     </Container>

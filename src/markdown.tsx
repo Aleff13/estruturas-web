@@ -8,6 +8,7 @@ import deque from "../src/markdown/Deque.md";
 import queue from "../src/markdown/Queue.md";
 import set from "../src/markdown/Set.md";
 import recursion from "../src/markdown/recursion.md";
+import hashSearch from "../src/markdown/hashSearch.md";
 
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Container, Typography } from "@mui/material";
@@ -26,6 +27,7 @@ export enum MarkdownIndex {
   set = "set",
   tree = "tree",
   recursion = "recursion",
+  hashSearch = "hashSearch",
 }
 
 const Markdown = ({ content }: MardownProps) => {
@@ -40,6 +42,7 @@ const Markdown = ({ content }: MardownProps) => {
     set,
     tree,
     recursion,
+    hashSearch,
   ];
 
   const getIndex = (content: string) => {
@@ -62,6 +65,8 @@ const Markdown = ({ content }: MardownProps) => {
         return 7;
       case MarkdownIndex.recursion:
         return 8;
+      case MarkdownIndex.hashSearch:
+        return 9;
       default:
         return 0;
     }

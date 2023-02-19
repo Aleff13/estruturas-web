@@ -7,7 +7,9 @@ export const linkReference = {
   set: "https://github.com/Aleff13/estruturas/tree/master/Set",
   satck: "https://github.com/Aleff13/estruturas/tree/master/Stack",
   tree: "https://github.com/Aleff13/estruturas/tree/master/Tree",
-  algorithms: "https://github.com/Aleff13/estruturas/tree/master/Algorithms",
+  recursion: "https://github.com/Aleff13/estruturas/tree/master/Algorithms",
+  hashSearch:
+    "https://github.com/Aleff13/estruturas/blob/master/Hash/HashTable.ts#L77",
 };
 
 export const resumeText = {
@@ -24,6 +26,8 @@ export const resumeText = {
   stack:
     "Pilhas, uma implementação das listas implementando os conceitos de LIFO",
   tree: "Árvore, se você busca utilizar o que há de mais avançado em termos de eficiencia de busca chegou no lugar certo",
-  algorithms:
-    "Nesta seção você encontrará diversos algoritimos utilizados no seu dia a dia",
+  recursion:
+    "A recursão é um conceito muito utilizado quando precisamos iterar coisas, ou repetir processos. Dado um caso base, podemos reduzir o escopo de uma função e melhorar sua legibilidade com esta técnica",
+  hashSearch:
+    "A busca hash, consiste em uma forma de facilitar a busca por elementos em uma tabela hash, dado uma key",
 };
