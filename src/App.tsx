@@ -7,10 +7,10 @@ import { linkReference, resumeText } from "./utils/constants";
 
 const App = () => {
   return (
-    <Container >
+    <Container>
         <Typography
         variant="h3"
-        sx={{textAlign: 'center'}}>Estruturas de dados</Typography>
+        sx={{textAlign: 'center', marginTop: '25px'}} color="white">Estruturas de dados</Typography>
       <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 2, pt: 2}}>
         <StructureCard
           resume={resumeText.arrays}

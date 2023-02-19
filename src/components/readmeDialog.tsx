@@ -52,21 +52,21 @@ const StructureCard = ({title, content, resume, reference}: StructureCardProps) 
   };
 
   return (
-    <Card sx={{ minWidth: 200, margin: 5 }} elevation={4}>
+    <Card sx={{ minWidth: 200, margin: 5, backgroundColor: '#080541' }} elevation={8}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 16 }} color="white" gutterBottom>
             {title.toUpperCase()}
         </Typography>
-        <Typography variant="body2">
+        <Typography variant="body2" color="white" sx={{ fontSize: 16 }}>
         {resume}
       </Typography>
       </CardContent>
       <CardActions sx={{gap: 2, pt: 2}}>
-      <IconButton onClick={handleClickOpen}>
+      <IconButton onClick={handleClickOpen} color="primary">
         <MenuBookIcon/>
       </IconButton>
-      <IconButton href={reference}>
-        <CodeIcon />
+      <IconButton href={reference} color="primary">
+        <CodeIcon  />
       </IconButton>
       <ReadmeDialog
         selectedValue={selectedValue}
