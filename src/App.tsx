@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-// import "./App.css";
+import "./App.css";
 import { StructureCard } from "./components/readmeDialog";
 import { MarkdownIndex } from "./markdown";
 import { linkReference, resumeText } from "./utils/constants";
