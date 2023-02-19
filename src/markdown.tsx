@@ -7,6 +7,7 @@ import tree from "../src/markdown/Tree.md";
 import deque from "../src/markdown/Deque.md";
 import queue from "../src/markdown/Queue.md";
 import set from "../src/markdown/Set.md";
+import recursion from "../src/markdown/recursion.md";
 
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Container, Typography } from "@mui/material";
@@ -24,11 +25,22 @@ export enum MarkdownIndex {
   hash = "hash",
   set = "set",
   tree = "tree",
+  recursion = "recursion",
 }
 
 const Markdown = ({ content }: MardownProps) => {
   const [docs, setDocs] = useState<string>("");
-  const docsImport = [array, dictionary, stack, queue, deque, hash, set, tree];
+  const docsImport = [
+    array,
+    dictionary,
+    stack,
+    queue,
+    deque,
+    hash,
+    set,
+    tree,
+    recursion,
+  ];
 
   const getIndex = (content: string) => {
     switch (content) {
@@ -48,6 +60,8 @@ const Markdown = ({ content }: MardownProps) => {
         return 6;
       case MarkdownIndex.tree:
         return 7;
+      case MarkdownIndex.recursion:
+        return 8;
       default:
         return 0;
     }
@@ -58,8 +72,6 @@ const Markdown = ({ content }: MardownProps) => {
       let docToAdd = await res.text();
       setDocs(docToAdd);
     });
-    console.log(docs);
-    console.log(content);
   });
 
   return (

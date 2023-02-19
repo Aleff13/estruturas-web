@@ -8,10 +8,22 @@ import { linkReference, resumeText } from "./utils/constants";
 const App = () => {
   return (
     <Container>
-        <Typography
+      <Typography
         variant="h3"
-        sx={{textAlign: 'center', marginTop: '25px'}} color="white">Estruturas de dados</Typography>
-      <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 2, pt: 2}}>
+        sx={{ textAlign: "center", marginTop: "25px" }}
+        color="white"
+      >
+        Estruturas de dados
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          gap: 2,
+          pt: 2,
+        }}
+      >
         <StructureCard
           resume={resumeText.arrays}
           title={MarkdownIndex.array}
@@ -66,6 +78,29 @@ const App = () => {
           title={MarkdownIndex.tree}
           content={MarkdownIndex.tree}
           reference={linkReference.tree}
+        ></StructureCard>
+      </Box>
+      <Typography
+        variant="h3"
+        sx={{ textAlign: "center", marginTop: "25px" }}
+        color="white"
+      >
+        Algoritimos
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          gap: 2,
+          pt: 2,
+        }}
+      >
+        <StructureCard
+          resume={resumeText.algorithms}
+          title={MarkdownIndex.recursion}
+          content={MarkdownIndex.recursion}
+          reference={linkReference.algorithms}
         ></StructureCard>
       </Box>
     </Container>
