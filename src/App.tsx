@@ -27,6 +27,13 @@ const App = () => {
         ></StructureCard>
 
         <StructureCard
+          resume={resumeText.stack}
+          title={MarkdownIndex.stack}
+          content={MarkdownIndex.stack}
+          reference={linkReference.satck}
+        ></StructureCard>
+
+        <StructureCard
           resume={resumeText.deque}
           title={MarkdownIndex.deque}
           content={MarkdownIndex.deque}
