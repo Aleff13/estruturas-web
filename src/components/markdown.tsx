@@ -1,33 +1,21 @@
 import React, { useEffect, useState } from "react";
-import array from "../src/markdown/array.md";
-import dictionary from "../src/markdown/dictionary.md";
-import hash from "../src/markdown/Hashs.md";
-import stack from "../src/markdown/Stack.md";
-import tree from "../src/markdown/Tree.md";
-import deque from "../src/markdown/Deque.md";
-import queue from "../src/markdown/Queue.md";
-import set from "../src/markdown/Set.md";
-import recursion from "../src/markdown/recursion.md";
-import hashSearch from "../src/markdown/hashSearch.md";
+import array from "../markdown/array.md";
+import dictionary from "../markdown/dictionary.md";
+import hash from "../markdown/Hashs.md";
+import stack from "../markdown/Stack.md";
+import tree from "../markdown/Tree.md";
+import deque from "../markdown/Deque.md";
+import queue from "../markdown/Queue.md";
+import set from "../markdown/Set.md";
+import recursion from "../markdown/recursion.md";
+import hashSearch from "../markdown/hashSearch.md";
 
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Container, Typography } from "@mui/material";
+import { MarkdownIndex } from "../services/constants";
 
 interface MardownProps {
   content: MarkdownIndex;
-}
-
-export enum MarkdownIndex {
-  array = "array",
-  dictionary = "dictionary",
-  stack = "stack",
-  queue = "queue",
-  deque = "deque",
-  hash = "hash",
-  set = "set",
-  tree = "tree",
-  recursion = "recursion",
-  hashSearch = "hashSearch",
 }
 
 const Markdown = ({ content }: MardownProps) => {
@@ -45,7 +33,7 @@ const Markdown = ({ content }: MardownProps) => {
     hashSearch,
   ];
 
-  const getIndex = (content: string) => {
+  const getIndex = (content: MarkdownIndex) => {
     switch (content) {
       case MarkdownIndex.array:
         return 0;

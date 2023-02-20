@@ -1,9 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import "./App.css";
-import { StructureCard } from "./components/readmeDialog";
-import { MarkdownIndex } from "./markdown";
-import { linkReference, resumeText } from "./utils/constants";
+import { AlgotithmCard } from "./components/algorithmCard";
+import { StructureCard } from "./components/structureCard";
+import { algotithms, dataStructures } from "./services/constants";
 
 const App = () => {
   return (
@@ -19,66 +19,18 @@ const App = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
           gap: 2,
           pt: 2,
         }}
       >
-        <StructureCard
-          resume={resumeText.arrays}
-          title={MarkdownIndex.array}
-          content={MarkdownIndex.array}
-          reference={linkReference.arrays}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.queue}
-          title={MarkdownIndex.queue}
-          content={MarkdownIndex.queue}
-          reference={linkReference.queue}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.stack}
-          title={MarkdownIndex.stack}
-          content={MarkdownIndex.stack}
-          reference={linkReference.satck}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.deque}
-          title={MarkdownIndex.deque}
-          content={MarkdownIndex.deque}
-          reference={linkReference.deque}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.dictionary}
-          title={MarkdownIndex.dictionary}
-          content={MarkdownIndex.dictionary}
-          reference={linkReference.dictionary}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.set}
-          title={MarkdownIndex.set}
-          content={MarkdownIndex.set}
-          reference={linkReference.set}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.hash}
-          title={MarkdownIndex.hash}
-          content={MarkdownIndex.hash}
-          reference={linkReference.hash}
-        ></StructureCard>
-
-        <StructureCard
-          resume={resumeText.tree}
-          title={MarkdownIndex.tree}
-          content={MarkdownIndex.tree}
-          reference={linkReference.tree}
-        ></StructureCard>
+        {dataStructures.map((structure) => (
+          <StructureCard
+            resume={structure.resume}
+            title={structure.title}
+            content={structure.content}
+            reference={structure.reference}
+          ></StructureCard>
+        ))}
       </Box>
       <Typography
         variant="h3"
@@ -90,24 +42,18 @@ const App = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
+          flexDirection: "row",
           gap: 2,
           pt: 2,
         }}
       >
-        <StructureCard
-          resume={resumeText.recursion}
-          title={MarkdownIndex.recursion}
-          content={MarkdownIndex.recursion}
-          reference={linkReference.recursion}
-        ></StructureCard>
-        <StructureCard
-          resume={resumeText.hashSearch}
-          title={MarkdownIndex.hashSearch}
-          content={MarkdownIndex.hashSearch}
-          reference={linkReference.hashSearch}
-        ></StructureCard>
+        {algotithms.map((algorithm) => (
+          <AlgotithmCard
+            title={algorithm.title}
+            content={algorithm.content}
+            reference={algorithm.reference}
+          ></AlgotithmCard>
+        ))}
       </Box>
     </Container>
   );
