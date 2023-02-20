@@ -33,13 +33,11 @@ export const resumeText = {
   dictionary:
     "Dicionários, primeira estrutura utilizando chave, valor, se você está procurando uma forma de armazenar seus elementos de forma parecida com os arrays, mas quer buscar um valor com base em uma chave",
   hash: "As tabelas hash serão sua escolha se estiver buscando melhorar a eficiencia de estruturas baseadas em dicionarios",
-  queue:
-    "Filas, uma implementação das listas implementando os conceitos de FIFO",
+  queue: "Filas, uma implementação das listas utilizando os conceitos de FIFO",
   deque:
     "Deques, se você precisa de uma mistura entre pilhas e filas essa é a sua escolha",
   set: "Os conjuntos, muito utilizados na matemática, podemos encarar como um superset dos dicionários",
-  stack:
-    "Pilhas, uma implementação das listas implementando os conceitos de LIFO",
+  stack: "Pilhas, uma implementação das listas utilizando os conceitos de LIFO",
   tree: "Árvore, se você busca utilizar o que há de mais avançado em termos de eficiencia de busca chegou no lugar certo",
 };
 
