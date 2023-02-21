@@ -24,7 +24,8 @@ export const linkReference = {
   recursion: "https://github.com/Aleff13/estruturas/tree/master/Algorithms",
   hashSearch:
     "https://github.com/Aleff13/estruturas/blob/master/Hash/HashTable.ts#L61-L84",
-  binarySearch: "",
+  binarySearch:
+    "https://github.com/Aleff13/estruturas/blob/master/Utils/binarySearch.ts",
 };
 
 export const resumeText = {
@@ -116,5 +117,10 @@ export const algotithms: algotithmInterface[] = [
     title: MarkdownIndex.hashSearch,
     content: MarkdownIndex.hashSearch,
     reference: linkReference.hashSearch,
+  },
+  {
+    title: MarkdownIndex.binarySearch,
+    content: MarkdownIndex.binarySearch,
+    reference: linkReference.binarySearch,
   },
 ];
