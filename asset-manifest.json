@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/estruturas-web/static/css/main.a3c92fea.css",
-    "main.js": "/estruturas-web/static/js/main.b7ffc660.js",
+    "main.js": "/estruturas-web/static/js/main.67e1f7b7.js",
     "static/js/787.f76a319d.chunk.js": "/estruturas-web/static/js/787.f76a319d.chunk.js",
     "static/media/binarySearch.md": "/estruturas-web/static/media/binarySearch.54d47e2b7b0302858806.md",
     "static/media/Deque.md": "/estruturas-web/static/media/Deque.8ecbb8b02b957e26caf5.md",
@@ -16,11 +16,11 @@
     "static/media/dictionary.md": "/estruturas-web/static/media/dictionary.059cbc2f8f9f26116d3e.md",
     "static/media/Set.md": "/estruturas-web/static/media/Set.7fa0c012a2984ab56ee8.md",
     "main.a3c92fea.css.map": "/estruturas-web/static/css/main.a3c92fea.css.map",
-    "main.b7ffc660.js.map": "/estruturas-web/static/js/main.b7ffc660.js.map",
+    "main.67e1f7b7.js.map": "/estruturas-web/static/js/main.67e1f7b7.js.map",
     "787.f76a319d.chunk.js.map": "/estruturas-web/static/js/787.f76a319d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3c92fea.css",
-    "static/js/main.b7ffc660.js"
+    "static/js/main.67e1f7b7.js"
   ]
 }
