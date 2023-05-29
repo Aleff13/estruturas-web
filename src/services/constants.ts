@@ -10,6 +10,9 @@ export enum MarkdownIndex {
   recursion = "recursion",
   hashSearch = "hashSearch",
   binarySearch = "binarySearch",
+  selectionSort = "selectionSort",
+  insertionSort = "insertionSort",
+  countingSort = "countingSort",
 }
 
 export const linkReference = {
@@ -26,6 +29,12 @@ export const linkReference = {
     "https://github.com/Aleff13/estruturas/blob/master/Hash/HashTable.ts#L61-L84",
   binarySearch:
     "https://github.com/Aleff13/estruturas/blob/master/Utils/binarySearch.ts",
+  selectionSort:
+    "https://github.com/Aleff13/estruturas/blob/master/Algorithms/sort/sort.ts#L2-L40",
+  insertionSort:
+    "https://github.com/Aleff13/estruturas/blob/master/Algorithms/sort/sort.ts#L42-L84",
+  countingSort:
+    "https://github.com/Aleff13/estruturas/blob/master/Algorithms/sort/sort.ts#L86-L110",
 };
 
 export const resumeText = {
@@ -122,5 +131,23 @@ export const algotithms: algotithmInterface[] = [
     title: MarkdownIndex.binarySearch,
     content: MarkdownIndex.binarySearch,
     reference: linkReference.binarySearch,
+  },
+];
+
+export const sortAlgotithms: algotithmInterface[] = [
+  {
+    title: MarkdownIndex.selectionSort,
+    content: MarkdownIndex.selectionSort,
+    reference: linkReference.selectionSort,
+  },
+  {
+    title: MarkdownIndex.insertionSort,
+    content: MarkdownIndex.insertionSort,
+    reference: linkReference.insertionSort,
+  },
+  {
+    title: MarkdownIndex.countingSort,
+    content: MarkdownIndex.countingSort,
+    reference: linkReference.countingSort,
   },
 ];

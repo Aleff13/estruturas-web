@@ -3,7 +3,11 @@ import React from "react";
 import "./App.css";
 import { AlgotithmCard } from "./components/algorithmCard";
 import { StructureCard } from "./components/structureCard";
-import { algotithms, dataStructures } from "./services/constants";
+import {
+  algotithms,
+  dataStructures,
+  sortAlgotithms,
+} from "./services/constants";
 
 const App = () => {
   return (
@@ -37,7 +41,7 @@ const App = () => {
         sx={{ textAlign: "center", marginTop: "25px" }}
         color="white"
       >
-        Algoritimos
+        Algoritmos
       </Typography>
       <Box
         sx={{
@@ -51,6 +55,32 @@ const App = () => {
         }}
       >
         {algotithms.map((algorithm) => (
+          <AlgotithmCard
+            title={algorithm.title}
+            content={algorithm.content}
+            reference={algorithm.reference}
+          ></AlgotithmCard>
+        ))}
+      </Box>
+      <Typography
+        variant="h3"
+        sx={{ textAlign: "center", marginTop: "25px" }}
+        color="white"
+      >
+        Algoritmos de ordenação
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 2,
+          pt: 2,
+          overflowX: "visible",
+          overflowY: "hidden",
+          whiteSpace: "nowrap",
+        }}
+      >
+        {sortAlgotithms.map((algorithm) => (
           <AlgotithmCard
             title={algorithm.title}
             content={algorithm.content}

@@ -10,6 +10,7 @@ import set from "../markdown/Set.md";
 import recursion from "../markdown/recursion.md";
 import hashSearch from "../markdown/hashSearch.md";
 import binarySearch from "../markdown/binarySearch.md";
+import counting from "../markdown/counting.md";
 
 class MarkdownService {
   static getDocs = () => {
@@ -25,6 +26,7 @@ class MarkdownService {
       recursion,
       hashSearch,
       binarySearch,
+      counting,
     ];
 
     return docsImport;
@@ -54,6 +56,12 @@ class MarkdownService {
         return 9;
       case MarkdownIndex.binarySearch:
         return 10;
+      case MarkdownIndex.countingSort:
+        return 11;
+      case MarkdownIndex.selectionSort:
+        return 11;
+      case MarkdownIndex.insertionSort:
+        return 11;
       default:
         return 0;
     }
