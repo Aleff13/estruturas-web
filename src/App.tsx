@@ -45,6 +45,9 @@ const App = () => {
           flexDirection: "row",
           gap: 2,
           pt: 2,
+          overflowX: "visible",
+          overflowY: "hidden",
+          whiteSpace: "nowrap",
         }}
       >
         {algotithms.map((algorithm) => (
